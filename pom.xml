@@ -49,33 +49,6 @@
   </build>
   
   <!-- Following location tells maven to download jar from following repositoty if it couldn't find in internet -->
-  <distributionManagement>
-		<repository>
-			<uniqueVersion>false</uniqueVersion>
-			<id>cod-repo</id>
-			<url>http://170.248.225.76:8081/nexus/content/repositories/app-dev-${deploy.location}</url>
-		</repository>
-  </distributionManagement>
-	
-  <properties>
-	<deploy.location>snapshot</deploy.location>
-  </properties>
-  
-  <repositories>
-		<repository>
-			<id>cod web release</id>
-			<name>cod web release</name>
-			<url>http://170.248.225.76:8081/nexus/content/repositories/app-dev-release/</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>cod web snapshot</id>
-			<name>cod web snapshot</name>
-			<url>http://170.248.225.76:8081/nexus/content/repositories/app-dev-snapshot/</url>
-		</repository>	
-  </repositories>
   
   <dependencies>
   	<!-- Pivotal Greenplum driver -->
